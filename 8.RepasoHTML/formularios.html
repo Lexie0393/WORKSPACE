@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <h2>Formulario 1 Datos</h2>
+        <form action="" method="get"> <!-- En el action="" va a ir la URL del servidor -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos"><br><br>
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono"><br><br>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="correo" id="email"><br><br>
+            <label for="clave">Contraseña</label>
+            <input type="password" name="contraseña" id="clave"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>Formulario 2 Deporte</h2>
+        <form action="" method="get">
+            <label for="nombre1">Nombre</label>
+            <input type="text" id="nombre1" name="nombre1"><br><br>
+            <label for="apellidos1">Apellidos</label>
+            <input type="text" id="apellidos1" name="apellidos1"><br><br>
+            <label for="fecha_nac">Fecha nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nac"><br><br>
+            <p>¿Practicas deporte?</p>
+            <input type="radio" name="deporte" id="si" value="s">
+            <label for="si">Si</label>
+            <input type="radio" name="deporte" id="no" value="n">
+            <label for="no">No</label><br><br>
+            <label for="deporte">Elige tu deporte favorito:</label>
+            <select name="deporte" id="deporte">
+                <option value="Balonmano">Balonmano</option>
+                <option value="Natación">Natación</option>
+                <option value="Patinaje">Patinaje</option>
+            </select><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>Formulario 3 Cita Peluquería</h2>
+        <form action="" method="get">
+            <label for="nombre2">Nombre</label>
+            <input type="text" id="nombre2" name="nombre2" required><br><br>
+            <label for="apellidos2">Apellidos</label>
+            <input type="text" id="apellidos2" name="apellidos2" required><br><br>
+            <label for="telefono">Teléfono</label>
+            <input type="number" id="telefono" name="telefono" maxlength="9" required><br><br>
+            <label for="fecha_cita">Fecha de la cita:</label>
+            <input type="date" name="fecha_cita" id="fecha_cita" required><br><br>
+            <label for="hora_cita">Hora de la cita:</label>
+            <input type="time" name="hora_cita" id="hora_cita" step="900" required><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <h2>Formulario 4 Registro</h2>
+        <form action=""></form>
+        <label for="nombre3">Nombre</label>
+        <input type="text" id="nombre3" name="nombre3" required><br><br>
+        <label for="apellidos3">Apellidos</label>
+        <input type="text" id="apellidos3" name="apellidos3" required><br><br>
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="correo" id="email" minlength="6" pattern="(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}"
+            title="La contraseña debe tener al menos una letra mayúscula, un carácter especial y mínimo 6 caracteres"
+            required><br><br>
+        <label for="photo">Foto de perfil:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+        <input type="submit" value="Enviar">
+    </main>
+    <footer>&copy;Creado por Lexie 2025</footer>
+
+</body>
+
+</html>

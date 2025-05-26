@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Crea los siguientes Formularios</h1>
+    </header>
+    <main>
+        <h2>Formulario de registro</h2>
+        <form action="" method="get">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos"><br><br>
+            <p>Sexo:</p>
+            <input type="radio" name="Sexo" id="hombre" value="h">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" name="Sexo" id="mujer" value="m">
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" name="Sexo" id="otro" value="o">
+            <label for="otro">Otro</label><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+        <h2>Encuesta de Preferencias de Café</h2>
+        <form action="" method="get">
+            <label for="nombre1">Tu nombre:</label><br>
+            <input type="text" name="nombre" id="nombre1" placeholder="Escribe tu nombre aquí..."><br><br>
+            <label for="cafe">¿Cuál es tu tipo de café favorito?</label><br>
+            <select name="cafe" id="cafe">
+                <option value="Espresso">Espresso</option>
+                <option value="Cortado">Cortado</option>
+                <option value="Capuccino">Capuccino</option>
+            </select><br><br>
+            <input type="checkbox" name="acepto" id="aceptar" required>
+            <label for="aceptar">Acepto compartir mi elección con los organizadores.</label><br><br>
+            <label for="comentario">¿Algo más que quieras añadir?</label><br>
+            <textarea name="comentario" id="comentario" rows="4" cols="40" placeholder="Déjanos tus comentarios..."></textarea><br><br>
+            <input type="submit" value="Enviar Encuesta">
+        </form>
+    </main>
+
+    <footer>&copy;Creado por Lexie 2025</footer>
+</body>
+
+</html>
