@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: fantasy;
+}
+
+/* Queremos aplicar las distintas propiedades a los distintos párrafos: 
+    
+    Para el div 1 aplicamos: 
+        -Color de fondo verde
+        -Ancho de 200px
+        -Alto de 100px
+        -Borde de 3px de tipo solid y de color azul
+        -Margen de 50px
+*/
+
+/* 
+    Para el div 2 aplicamos:
+        -Color de fondo naranja
+        -Ancho de 50%
+        -Alto de 200px
+        -Borde de 5px de tipo dotted y de color rojo
+        -Relleno de 20px
+*/
+
+/* 
+    Para el div 3 aplicamos:
+        -Color de fondo azul
+        -Ancho de 80%
+        -Alto de 100px
+        -Borde de 10px de tipo outset y de color marron
+        -Que esté el div centrado automáticamente
+        -Margen superior de 80px
+*/

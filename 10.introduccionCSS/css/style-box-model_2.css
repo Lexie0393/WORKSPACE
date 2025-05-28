@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+    font-family: fantasy;
+}
+
+/* Queremos aplicar las distintas propiedades a los distintos párrafos: 
+    
+    Para el párrafo 1 aplicamos: 
+        -Color de fuente rojo y negrita
+        -Borde de 3px solid y de color azul
+        -Ancho 500px
+        -Relleno de 20px
+        -Margen inferior de 100px    
+*/
+
+/* 
+    Para el párrafo 2 aplicamos:
+        -Fuente de color azul y cursiva
+        -Texto alineado a la derecha
+        -Borde de 5px de tipo dotted y color rojo
+        -Ancho de 600px
+        -Que esté el párrafo centrado automaticamente
+        -Relleno de 20px a los lados y de 50px arriba y abajo
+        -Margen inferior de 20px  
+*/
+
+/* 
+    Para el párrafo 3 aplicamos:
+        -Texto justificado y con un interlineado de 30px
+        -Borde de 8px de tipo outset y color negro
+        -Ancho del 50%
+        -Sin relleno
+        -Margen superior e inferior de 50px  
+*/
+
+/* 
+    Para el párrafo 4 aplicamos:
+        -Texto en cursiva y de tamaño 10px
+        -Borde superior de 2px de tipo solid y color rojo
+        -Ancho del 100%
+        -Relleno superior de 10px
+*/

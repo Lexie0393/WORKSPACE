@@ -1,0 +1,54 @@
+h1 {
+    color: green;
+    text-align: center;
+    font-size: 48px;
+}
+
+
+/* Contenido */
+/* primer section */
+#sec1 p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sec1 img, #sec3 img {
+    height: 100px;
+}
+/* segunda section */
+#sec2 h2 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#sec2 p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#sec2 img {
+    height: 200px;
+    width: 200px;
+}
+
+/* tercera seccion*/
+
+#sec3 h2 {
+    color: blue;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#sec3 p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+footer p{
+    text-align: right;
+    text-decoration: line-through;
+}
