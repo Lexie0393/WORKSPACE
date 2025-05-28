@@ -19,6 +19,14 @@ h1 {
         -Borde de 3px de tipo solid y de color azul
         -Margen de 50px
 */
+#d1 {
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    border: solid 3px blue;
+    margin: 50px;
+}
+
 
 /* 
     Para el div 2 aplicamos:
@@ -28,6 +36,13 @@ h1 {
         -Borde de 5px de tipo dotted y de color rojo
         -Relleno de 20px
 */
+#d2 {
+    background-color: orangered;
+    width: 50%;
+    height: 200px;
+    border: dotted 5px red;
+    padding: 20px;
+}
 
 /* 
     Para el div 3 aplicamos:
@@ -38,3 +53,11 @@ h1 {
         -Que esté el div centrado automáticamente
         -Margen superior de 80px
 */
+#d3 {
+    background-color: blue;
+    width: 80%;
+    height: 100px;
+    border: outset 10px brown;
+    margin: auto;
+    margin-top: 80px;
+}
