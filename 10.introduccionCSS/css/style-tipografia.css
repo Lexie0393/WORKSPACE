@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yellowtail&display=swap');
+@font-face {
+    font-family: "BodoniModa";
+    src: url(Font/BodoniModa-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: "bodonitalic";
+    src: url(Font/BodoniModa-Italic-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(Font/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.secc1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#secc1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.secc2 {
+    font-family: "Yellowtail", cursive;
+    font-weight: 700;
+}
+
+#secc2 {
+     font-family: "Open Sans", sans-serif;
+}
+
+.secc3 {
+    font-family: "BodoniModa";
+}
+
+.secc3-2 {
+    font-family: "bodonitalic";
+}
+
+.secc3-1 {
+    font-family: "Merriweather";
+}

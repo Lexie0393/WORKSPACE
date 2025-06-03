@@ -1,0 +1,13 @@
+h1 {
+    background-image: url(soap-bubbles-9585870_640.jpg);
+    background-size: 1000px 200px;
+    background-attachment: fixed;
+}
+
+.secc1 {
+    background: linear-gradient(90deg, rgba(178, 116, 219, 1) 0%, rgba(160, 51, 144, 1) 29%, rgba(126, 29, 253, 1) 61%, rgba(252, 176, 69, 1) 100%);
+}
+
+.secc2 {
+    background-image: url(blob-scatter-haikei.png);
+}
