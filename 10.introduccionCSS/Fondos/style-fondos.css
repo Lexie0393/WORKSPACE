@@ -6,8 +6,48 @@ h1 {
 
 .secc1 {
     background: linear-gradient(90deg, rgba(178, 116, 219, 1) 0%, rgba(160, 51, 144, 1) 29%, rgba(126, 29, 253, 1) 61%, rgba(252, 176, 69, 1) 100%);
+    background-size: 1000px 200px;
+    background-attachment: fixed;
 }
 
 .secc2 {
     background-image: url(blob-scatter-haikei.png);
+    background-size: 1000px 200px;
+    background-attachment: fixed;
+}
+
+.secc3 {
+    --s: 86px;
+    /* control the size*/
+    --c1: #00a0b0;
+    --c2: #eb6841;
+
+    --_g: var(--c1) 0 25%, #0000 0 50%;
+    background:
+        repeating-conic-gradient(at 33% 33%, var(--_g)),
+        repeating-conic-gradient(at 66% 66%, var(--_g)),
+        var(--c2);
+    background-size: var(--s) var(--s);
+    background-size: 1000px 200px;
+    background-attachment: fixed;
+}
+
+.footer {
+    height: 60vh;
+    --s: 9px;
+    /* control the size*/
+    --c1: #c02942;
+    --c2: #53777a;
+    --c3: #ecd078;
+
+    --g: var(--s);
+    /* gap between lines */
+    background:
+        conic-gradient(at var(--s) calc(100% - var(--s)), #0000 270deg, var(--c1) 0) calc(var(--s) + var(--g)) 0,
+        linear-gradient(var(--c2) var(--s), #0000 0) 0 var(--g),
+        conic-gradient(at var(--s) calc(100% - var(--s)), #0000 90deg, var(--c2) 0 180deg, var(--c1) 0),
+        var(--c3);
+    background-size: calc(2*(var(--s) + var(--g))) calc(2*(var(--s) + var(--g)));
+    background-size: 100px 100px;
+    background-attachment: fixed;
 }
