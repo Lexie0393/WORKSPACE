@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Añado manualmente rellenos alrededor de varios elementos para que se visualice mejor la página  */
+body{
+    padding: 0px;
+}
+
+p{
+    padding: 20px 0;
+    font-family: "Pridi", serif;
+}
+
+h1 {
+    text-align: center;
+    padding-top: calc(10vw - 16px);
+    color: white;
+    font-family: "Alegreya", serif;
+}
+
+h2 {
+    font-family: "Titillium Web", sans-serif;
+}
+
+#p1 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+section{
+    margin: 50px 0;
+    padding: 50px;
+}
+header, footer {
+  --s: 40px; /* control the size*/
+  --c1: #c0d860;
+  --c2: #604848;
+  
+  --_c: #0000 75%,var(--c1) 0;
+  --_g1: conic-gradient(at 10% 50%,var(--_c));
+  --_g2: conic-gradient(at 50% 10%,var(--_c));
+  background:
+    var(--_g1),
+    var(--_g1) calc(1*var(--s)) calc(3*var(--s)),
+    var(--_g1) calc(2*var(--s)) calc(1*var(--s)),
+    var(--_g1) calc(3*var(--s)) calc(4*var(--s)),
+    var(--_g1) calc(4*var(--s)) calc(2*var(--s)),
+    var(--_g2) 0                calc(4*var(--s)),
+    var(--_g2) calc(1*var(--s)) calc(2*var(--s)),
+    var(--_g2) calc(2*var(--s)) 0,
+    var(--_g2) calc(3*var(--s)) calc(3*var(--s)),
+    var(--_g2) calc(4*var(--s)) calc(1*var(--s)),
+    var(--c2);
+  background-size: calc(5*var(--s)) calc(5*var(--s));
+  width: 100vw;
+  height: 20vw;
+  text-align: center;
+}
+
+/* Doy estilos a los divs para hacer cajitas */
+.caja1 {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    background-color:rgb(208, 198, 133);
+    text-align: center;
+    border: 5px solid rgb(208, 198, 133);
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px gray, 15px 10px 10px rgb(107, 216, 165);
+    cursor: not-allowed;
+}
+
+#blo1 {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    background-color: gainsboro;
+    text-align: center;
+    border: 5px gainsboro solid;
+    border-radius: 20px 0;
+}
+
+#blo2 {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    background-color: gainsboro;
+    text-align: center;
+    border: 5px gainsboro solid;
+    border-radius: 0 20px 20px 0;
+}
+
+#blo3 {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    background-color: gainsboro;
+    text-align: center;
+    border: 5px gainsboro solid;
+    border-radius: 0 0 20px 0;
+}
