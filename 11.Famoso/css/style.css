@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+:root {
+    --Fondo-Principal: #f2f2f2;
+    /*Fondo neutro y limpio*/
+    --Fondo-Secundario: #2c2c2c;
+    /*Secciones alternas*/
+    --Color-Principal: #f4b400;
+    --Color-Secundario: #c0392b;
+    --Texto-Principal: #1a1a1a;
+    --Texto-Secundario: #555555;
+
+    --Fuente-Titulo: "Simonetta", serif;
+    --Fuente-Subtitulo: "Fira Sans", sans-serif;
+    --Fuente-Párrafo: "Prata", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+/* Menu navegacion */
+h1 {
+    font-family: var(--Fuente-Titulo);
+}
+
+h2 {
+    font-family: var(--Fuente-Subtitulo);
+}
+
+p {
+    font-family: var(--Fuente-Párrafo);
+}
+
+a {
+    font-family: var(--Fuente-Subtitulo);
+    text-decoration: none;
+    color: var(--Color-Secundario);
+}
+body {
+    background-color: var(--Fondo-Secundario);
+}
+footer {
+    background-color: var(--Fondo-Principal);
+    padding: 50px;
+    text-align: center;
+}
+.titulo {
+    background-color: white;
+    border: 3px solid;
+    border-color: var(--Fondo-Secundario);
+    /* margin: 30px; */
+    /* padding: 20px; */
+    text-align: center;
+    width: max-content;
+    /* height: 100px; */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cabecera {
+    background-color: var(--Fondo-Principal);
+
+}
+
+.boton {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--Fondo-Secundario);
+}
+
+/* Imagenes de Cabecera */
+img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.bean-img {
+    background-color: var(--Fondo-Secundario);
+}
+
+/* Flexbox menu */
+.barra-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.bean-img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Cuerpo */
+#biografia {
+    background-color: var(--Fondo-Secundario);
+}
+#subtitu, #subtitu2, #subtitu3, #subtitu4 {
+    background-color: var(--Fondo-Principal);
+    color: var(--Texto-Principal);
+    text-align: center;
+    padding: 10px;
+    border: 2px solid var(--Color-Principal);
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+#p1, #p2, #p3, #p4 {
+    background-color: white;
+    color: var(--Texto-Principal);
+    padding: 20px;
+    height: max-content;
+}
+
+.texto-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+.img-bio {
+    display: flex;
+    padding: 20px;
+}
+
+#trayectoria {
+    background-color: var(--Fondo-Secundario);
+}
+.img-trayectoria {
+    display: flex;
+    /* gap: 20px; */
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.colum>div {
+    background-color: rgba(244, 179, 0, 0.365);
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    gap: 40px;
+}
+.colum img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Premios */
+#premios {
+    text-align: center;
+}
+.tab {
+    display: flex;
+    justify-content: center;
+}
+
+#tabla {
+    display: flex;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    border: #f4b400 solid;
+    margin-top: 50px;
+}
+th, td {
+    border: var(--Fondo-Secundario) solid;
+    padding: 5px;
+}
+/* Multimedia */
+
+.multi img{
+    object-fit: contain;
+}
+.multi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#im {
+    display: flex;
+}
+#if {
+    display: flex;
+     object-fit: contain;
+     margin: 50px 0;
+}
+
+
+/* #img2, #img5, #img6,#img7 {
+    object-fit: contain;
+}
+
+#img1 {
+    max-width: 195.837px;
+    max-height: 195px;
+}
+#img3, #img4 {
+    width: 70%;
+    height: 100%
+} */
+
+
+/* .ip2, .ip5 {
+    display: flex;
+    align-content: flex-start;
+}
+
+.ip1, .ip3, .ip4 {
+    display: flex;
+    align-content: center;
+} */
+
