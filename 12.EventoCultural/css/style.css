@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --Fondo-encabe: linear-gradient(90deg, rgba(41, 66, 38, 0.98) 27%, rgba(133, 95, 68, 1) 100%);
+    --Fondo-secundario: #CEC5B2;
+    --Fondo-botones: #446041;
+    --Color-titulo: #003366;
+    --Texto-Principal: #fff;
+    --Texto-Secundario: #000;
+    --Texto-titulo: font-family: "Open Sans", sans-serif;
+    --Texto-parrafo: font-family: "Molengo", sans-serif;
+}
+
+body {
+    background-color: var(--Fondo-secundario);
+}
+
+/* footer {
+    background: var(--Fondo-encabe);
+} */
+
+h2 {
+    font-family: var(--Texto-titulo);
+    color: var(--Color-titulo);
+    text-align: center;
+    padding: 30px 0;
+}
+
+a {
+    font-family: var(--Texto-titulo);
+    color: var(--Texto-Principal);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--Fondo-botones);
+    border: var(--Fondo-secundario) solid 1px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px;
+
+}
+
+.hero {
+    background: var(--Fondo-encabe);
+
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.im {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.barra {
+    gap: 30px;
+    padding-right: 30px;
+    display: flex;
+}
+
+.poster {
+    background-image: url(../img/hero1.webp);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    gap: 20px;
+}
+.poster h1,h2 {
+    background-color: var(--Fondo-secundario);
+    color: var(--Texto-Secundario);
+    opacity: 0.8;
+    padding: 20px;
+    font-size: 32px;
+}
+
+.poster button {
+    background-color: var(--Fondo-botones);
+    color: var(--Texto-Principal);
+    padding: 15px;
+    border: solid var(--Fondo-botones);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
