@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D7DCE5;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    overflow: auto;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+}
+
+.black {
+    background-color: #283654;
+    color: #CFE0F9;
+}
+
+.white {
+    background-color: #CFE0F9;
+    color: #283654;
+}
+
+.tablero {
+    margin: auto;
+    width: 810px;
+    border: black solid 5px;
+    margin-bottom: 100px;
+}
+
+.dama{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.dama-verde {
+    background-color: #26A96C;
+}
+.dama-roja {
+    background-color: #E5625E;
+}
+  
+  
+  
+  

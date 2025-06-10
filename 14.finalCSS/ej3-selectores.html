@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 13 | Selectores</title>
+    <link rel="shortcut icon" href="img/css-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-ej3.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="contenedor"><span class="ejercicio">3 - </span>Selectores</h1>
+    </header>
+    <main class="contenedor">
+        <section>
+            <h2>Selectores de tipo:</h2>
+            <p>Se refieren a elementos HTML específicos. Por ejemplo, el selector p apuntará a todos los párrafos en tu
+                documento HTML.</p>
+        </section>
+
+        <section>
+            <h2>Selectores de clase:</h2>
+            <p>Utilizan el atributo class para aplicar estilos a uno o varios elementos. Se escriben con un punto
+                seguido del nombre de la clase. Por ejemplo, .boton apuntará a todos los elementos con class="boton".
+            </p>
+        </section>
+
+        <section>
+            <h2>Selectores de ID:</h2>
+            <p>Utilizan el atributo id para apuntar a un elemento HTML específico. Se escriben con un símbolo de numeral
+                (#) seguido del nombre del ID. Por ejemplo, #encabezado apuntará a un elemento con id="encabezado".</p>
+        </section>
+
+        <section>
+            <h2>Selectores de atributo:</h2>
+            <p>Permiten seleccionar elementos basados en sus atributos y valores. Por ejemplo, [type="text"] apuntará a
+                todos los elementos &lt;input&gt; con type="text".</p>
+        </section>
+
+        <section>
+            <h2>Selectores descendientes:</h2>
+            <p>Permiten apuntar a un elemento dentro de otro. Por ejemplo, ul li apuntará a todos los elementos
+                &lt;li&gt; que estén dentro de una lista &lt;ul&gt;.</p>
+        </section>
+
+        <section>
+            <h2>Selectores hijos directos:</h2>
+            <p>Seleccionan elementos que son hijos directos de otro elemento. Por ejemplo, ul &gt; li apuntará a todos
+                los elementos &lt;li&gt; que sean hijos directos de una lista &lt;ul&gt;.</p>
+        </section>
+
+        <section>
+            <h2>Selectores combinados:</h2>
+            <p>Permiten combinar múltiples selectores para ser más específicos en la selección de elementos. Por
+                ejemplo, header nav ul seleccionará todas las listas &lt;ul&gt; que estén dentro de un elemento
+                &lt;nav&gt; que a su vez esté dentro de un &lt;header&gt;.</p>
+        </section>
+
+        <section>
+            <h2>Selector de adyacente (+):</h2>
+            <p>Selecciona el elemento inmediatamente después de otro elemento específico. Por ejemplo, h2 + p
+                seleccionará el primer párrafo que esté directamente después de un elemento &lt;h2&gt;.</p>
+        </section>
+
+        <section>
+            <h2>Selector de hermano general (~):</h2>
+            <p>Selecciona todos los elementos que están después del elemento especificado, aunque no sean adyacentes.
+                Por ejemplo, h2 ~ p seleccionará todos los párrafos que estén después de cualquier &lt;h2&gt;.</p>
+        </section>
+
+        <section>
+            <h2>Selector de primer hijo (:first-child):</h2>
+            <p>Selecciona el primer hijo de un elemento padre específico. Por ejemplo, p:first-child seleccionará todos
+                los párrafos que sean el primer hijo de su elemento padre.</p>
+        </section>
+
+        <section>
+            <h2>Selector de último hijo (:last-child):</h2>
+            <p>Selecciona el último hijo de un elemento padre específico. Por ejemplo, p:last-child seleccionará todos
+                los párrafos que sean el último hijo de su elemento padre.</p>
+        </section>
+
+        <section>
+            <h2>Selector de enésimo hijo (:nth-child):</h2>
+            <p>Permite seleccionar elementos basados en su posición dentro de un elemento padre. Por ejemplo,
+                p:nth-child(2) seleccionará todos los párrafos que sean el segundo hijo de su elemento padre.</p>
+        </section>
+
+        <section>
+            <h2>Selectores de pseudo-clase:</h2>
+            <p>Representan estados especiales de elementos. Por ejemplo, :hover aplica estilos cuando el cursor está
+                sobre un elemento, :first-child selecciona el primer hijo de un elemento, etc.</p>
+        </section>
+
+        <section>
+            <h2>Selectores de pseudo-elementos:</h2>
+            <p>Permiten estilizar partes específicas de un elemento. Por ejemplo, ::selection que sirve para darle
+                estilo al texto que seleccionas con el ratón o ::first-letter que aplica estilos a la primera letra de
+                la primera línea.</p>
+        </section>
+
+        <hr>
+
+        <section id="ejercicio1">
+            <h2>Ejercicio 1: Seleccionando elementos específicos</h2>
+
+
+            <p>Usa selectores CSS para:</p>
+            <ul>
+                <li>Estilizar todos los párrafos (p).</li>
+                <li>Estilizar el primer párrafo después de cada título (h2).</li>
+                <li>Estilizar todos los elementos que sean hijos directos del contenedor principal (#contenedor).</li>
+                <li>Estilizar el último párrafo del contenedor principal.</li>
+                <li>Estilizar los párrafos que estén después del h3.</li>
+            </ul>
+
+            <p>Teniendo el siguiente código HTML:</p>
+
+            <div id="contenedor">
+                <h2>Título 1</h2>
+                <p>Párrafo 1</p>
+                <h2>Título 2</h2>
+                <p>Párrafo 2</p>
+                <p>Párrafo 3</p>
+                <h3>Subtítulo</h3>
+                <p>Párrafo 4</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="ejercicio2">
+            <h2>Ejercicio 2: Combinación de selectores</h2>
+
+
+            <p>Usa selectores CSS para:</p>
+            <ul>
+                <li>Estilizar la lista ul dentro del elemento nav.</li>
+                <li>Estilizar los enlaces a dentro de la lista ul.</li>
+                <li>Estilizar el enlace que esté después del primer enlace en la lista.</li>
+                <li>Estilizar los descendientes directos del elemento header.</li>
+            </ul>
+
+            <p>Teniendo el siguiente código HTML:</p>
+
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Acerca</a></li>
+                        <li><a href="#">Servicios</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        </section>
+
+        <hr>
+
+        <section id="ejercicio3">
+            <h2>Ejercicio 3: Uso de pseudoclases y pseudoelementos</h2>
+
+
+            <p>Usa selectores CSS para:</p>
+            <ul>
+                <li>Estilizar el primer elemento de la lista.</li>
+                <li>Estilizar el tercer elemento de la lista.</li>
+                <li>Estilizar el último elemento de la lista.</li>
+                <li>Estilizar todos los elementos impares de la lista.</li>
+                <li>Agregar un estilo visual al pasar el cursor sobre cada elemento de la lista.</li>
+            </ul>
+
+            <p>Teniendo el siguiente código HTML:</p>
+
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+            </ul>
+
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; Página creada por David Pérez Piñeiro</p>
+    </footer>
+</body>
+
+</html>

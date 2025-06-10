@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#podio {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+#a1 {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+}
+
+#a2 {
+    position: absolute;
+    top: 180px;
+    left: 410px;
+}
+
+#a3 {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+}

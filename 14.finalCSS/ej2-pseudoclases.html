@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 13 | Pseudoclases</title>
+    <link rel="shortcut icon" href="img/css-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-ej2.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="contenedor"><span class="ejercicio">2 - </span>Pseudoclases</h1>
+    </header>
+    <main class="contenedor">
+        <section>
+            <h2>:hover</h2>
+            <p>Se aplica a un elemento cuando el cursor del mouse está sobre él.</p>
+        </section>
+
+        <section>
+            <h2>:active</h2>
+            <p>Se aplica a un elemento mientras está siendo activado, generalmente al hacer clic en él.</p>
+
+        </section>
+
+        <section>
+            <h2>:disabled</h2>
+            <p>Se aplica a elementos de formulario que están deshabilitados, es decir, que no se pueden editar o
+                interactuar.</p>
+        </section>
+
+        <section>
+            <h2>Ejercicio</h2>
+            <p>Crea dos botones (uno de ellos disabled) y utiliza:</p>
+            <ul>
+                <li>:hover para cambiar el color de fondo de cada botón cuando el
+                    cursor esté sobre ellos.</li>
+                <li>:active para cambiar temporalmente el color del botón
+                    cuando se hace clic sobre él.</li>
+                <li>:disabled para cambiar el estilo de los botones que
+                    estén deshabilitados.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplo de solución</h2>
+            <img src="./img/ej2-sol_foto1.jpg" alt="Solución del ejercicio">
+        </section>
+
+        <section>
+            <h2>Solución</h2>
+            <!-- Aquí se va a realizar el ejercicio anterior -->
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>:checked</h2>
+            <p>Se aplica a elementos de formulario (como checkboxes o radio buttons) que están marcados o
+                seleccionados.
+            </p>
+        </section>
+
+        <section>
+            <h2>:focus</h2>
+            <p>Se aplican a elementos de formulario mientras está siendo enfocado por el usuario, es decir, cuando un
+                usuario hace clic o selecciona un elemento para interactuar con él.</p>
+        </section>
+
+        <section>
+            <h2>:valid e :invalid</h2>
+            <p>Se aplican a elementos de formulario que cumplen (o no cumplen) con los requisitos de validación.</p>
+        </section>
+
+        <section>
+            <h2>Ejercicio</h2>
+            <p>Crea un formulario de registro que incluya los siguientes campos:</p>
+            <ul>
+                <li>Un apartado donde deje marcar varios estilos de música preferidos: rock, pop, indie, techno,
+                    clásica. (obligatorio)</li>
+                <li>Otro apartado donde sólo pueda escoger una opción (radio). Siendo el enunciado: "Si tuviese que
+                    esoger a qué concierto ir, ¿cuál preferirias?" y las opciones: "ACDC", "The Beatles", "Queen",
+                    "The Rolling Stones" o "Ninguno". (obligatorio)</li>
+                <li>Botón para enviar el formulario</li>
+            </ul>
+            <p>El formulario tiene que tener un buen uso de las etiquetas (labels) y de los atributos necesarios
+                para después poder manejar la información correctamente (id, name, for, required, checked...).</p>
+            <p>Además, el formulario debe aplicar estilos para destacar las opciones que son seleccionadas
+                (:checked).</p>
+            <p><span class="destacar">AYUDA:</span> para aplicar estilos y que se vean diferencias cuando la opción está
+                seleccionada o no, los estilos los vamos a aplicar a las labels (porque el input de tipo checkbox y de
+                tipo radio no se puede modificar). Para ello vamos a utilizar input+label{ } y input:checked+label{ } en
+                el CSS de nuestro formulario.</p>
+        </section>
+
+        <section>
+            <h2>Ejemplo de solución</h2>
+            <img src="./img/ej2-sol_foto2.jpg" alt="Solución del ejercicio">
+        </section>
+
+        <section>
+            <h2>Solución</h2>
+            <!-- Aquí se va a realizar el primer formulario -->
+        </section>
+
+        <section>
+            <h2>Ejercicio</h2>
+            <p>Crea un formulario de registro que incluya los siguientes campos:</p>
+            <ul>
+                <li>Nombre completo (obligatorio, longitud mínima de 3 caracteres)</li>
+                <li>Correo electrónico (obligatorio, formato de correo electrónico válido)</li>
+                <li>Contraseña (obligatorio, longitud mínima de 6 caracteres)</li>
+                <li>Botón para enviar el formulario</li>
+            </ul>
+            <p>El formulario tiene que tener un buen uso de las etiquetas (labels) y de los atributos necesarios
+                para después poder manejar la información correctamente (id, name, for, required, checked...).</p>
+            <p>Además, el formulario debe aplicar estilos para cuando se esté interactuando con el elemento (:focus),
+                cuando se rellenen los datos correctamente (:valid) y cuando no (:invalid).</p>
+        </section>
+
+        <section>
+            <h2>Ejemplo de solución</h2>
+            <img src="./img/ej2-sol_foto3.jpg" alt="Solución del ejercicio">
+        </section>
+
+        <section>
+            <h2>Solución</h2>
+            <!-- Aquí se va a realizar el segundo formulario -->
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>:target</h2>
+            <p>Se aplica a un elemento que es el destino actual de un enlace dentro del documento.</p>
+        </section>
+
+        <section>
+            <h2>Ejercicio</h2>
+            <p>Agregar identificadores únicos a cada elemento 'section' que corresponde a distintas pseudoclases en una
+                página web. Luego, crear enlaces/botones para cada
+                pseudoclase (:hover, :active, :disabled, :checked, :focus, :valid e :invalid). Al hacer clic en cada
+                enlace/botón, el
+                objetivo es desplazarse hasta esa sección específica y resaltarla con un color de fondo único para cada
+                pseudoclase.</p>
+        </section>
+
+        <section>
+            <h2>Ejemplo de solución</h2>
+            <img src="./img/ej2-sol_foto4v1.jpg" alt="Solución del ejercicio">
+            <p>Al pulsar en el enlace/botón de :hover su sección va a cambiar el color de fondo, como por ejemplo:</p>
+            <img src="./img/ej2-sol_foto4v2.jpg" alt="Solución del ejercicio">
+        </section>
+
+        <section>
+            <h2>Solución</h2>
+            <!-- Aquí se va a realizar la solución del ejercicio anterior -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Página creada por David Pérez Piñeiro</p>
+    </footer>
+</body>
+
+</html>
