@@ -41,7 +41,10 @@ a {
     border: var(--Fondo-secundario) solid 1px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px;
+}
 
+hr {
+    border-color: var(--Fondo-botones);
 }
 
 .hero {
@@ -51,45 +54,210 @@ a {
 
 .contenedor {
     width: 100%;
+    height: min-content;
     margin: 0 auto;
 }
 
 .im {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
+    padding: 0 30px;
 }
 
 .barra {
     gap: 30px;
-    padding-right: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .poster {
-    background-image: url(../img/hero1.webp);
+    background-image: url(../img/agility-perros.jpg);
     background-size: cover;
-    height: 90vh;
+    background-position: center;
+    width: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
 }
-.poster h1,h2 {
+
+.poster h1 {
     background-color: var(--Fondo-secundario);
     color: var(--Texto-Secundario);
     opacity: 0.8;
     padding: 20px;
     font-size: 32px;
+    text-align: center;
+    width: 100%;
 }
 
 .poster button {
     background-color: var(--Fondo-botones);
     color: var(--Texto-Principal);
+    font-size: 32px;
     padding: 15px;
     border: solid var(--Fondo-botones);
     border-radius: 10px;
     box-shadow: 2px 2px 2px;
+    margin-bottom: 100px;
+}
+
+.activi {
+    display: flex;
+    padding: 80px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#p1, #p2, #p3 {
+    background: linear-gradient(90deg,rgba(41, 66, 38, 0.98) 27%, rgba(31, 43, 71, 1) 60%, rgba(133, 95, 68, 1) 100%);
+    border: var(--Fondo-botones) solid 5px;
+    border-radius: 100%;
+    text-align: center;
+    font-family: var(--Texto-parrafo);
+    font-size: 20px;
+    color: var(--Texto-Principal);
+    padding: 50px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#feria {
+    background: var(--Fondo-encabe);
+}
+
+.fecha span,
+.localizacion span,
+.acceso span {
+    font-size: 40px;
+}
+
+.sec1 h2,
+.sec1 p,
+.sec1 span {
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+.sec1 p {
+    font-size: 20px;
+}
+
+.sec1 h2 {
+    font-size: 28px;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+}
+
+.fecha,
+.localizacion,
+.acceso {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec2 h2, .org h2, .footer h2{
+    font-size: 32px;
+}
+
+.colab {
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.colab img {
+    width: 300px;
+    height: auto;
+}
+
+.pers img {
+    border-radius: 100%;
+}
+
+.pers p {
+    font-family: var(--Texto-parrafo);
+    color: var(--Texto-Secundario);
+    font-size: 24px;
+}
+
+.org {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 24px;
+    display: flex;
+    justify-content: end;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.redes img {
+    width: 50px;
+}
+
+
+@media (width <= 750px) {
+.im{
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+}
+
+@media (width <= 600px) {
+.barra {
+    flex-direction: column;
+}
+.activi {
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.colab {
+    justify-content: center;
+}
 }
