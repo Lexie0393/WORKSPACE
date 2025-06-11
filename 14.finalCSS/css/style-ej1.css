@@ -1,0 +1,33 @@
+.iconos {
+    fill: white;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#you {
+    background-color: red;
+}
+
+#ins {
+    background: linear-gradient(238deg, rgba(156, 9, 119, 1) 7%, rgba(212, 11, 135, 0.98) 28%, rgba(173, 10, 19, 1) 57%, rgba(201, 114, 14, 1) 75%, rgba(219, 188, 11, 1) 100%);
+}
+
+#twit {
+    background-color: black;
+}
+
+#face {
+    background-color: rgb(37, 37, 181);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: calc(50%-50px);
+    right: 0;
+}
