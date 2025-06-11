@@ -1,0 +1,79 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+.contenedor{
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 60px 0;
+}
+
+/* CSS del ejercicio 1 */
+h3 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+button {
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(7, 74, 7);
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+button:active{
+    background-color: yellow;
+}
+button:disabled{
+    background-color: gray;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+/* Resultado CSS del ejercicio 2 */
+form {
+    padding: 20px;
+    border: gray solid 1px;
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+}
+form> p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form1 label {
+    margin-right: 10px;
+    /* display: inline-block; */
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: rgb(2, 48, 2) solid 1px;
+    background-color: rgb(244, 233, 220);
+    cursor: pointer;
+}
+
+input:checked + label {
+    background-color: rgb(2, 48, 2);
+    text-decoration: underline;
+    color: white;
+}
+
+form> button {
+    margin: 20px;
+}
+
+/* Resultado CSS del ejercicio 3 */
