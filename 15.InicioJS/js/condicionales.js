@@ -45,7 +45,7 @@
 
 // if (edad<12) {
 //     document.writeln("El precio de la entrada es de 4 euros");
-// } else if ((edad>=12) && (edad<65)) {
+// } else if ((edad>=12) && (edad<65)) {  //Puedo quitar lo de >=12 porque arriba es menor a 12.
 //     document.writeln("El precio de la entrada es 8 euros");
 // } else  {
 //     document.writeln("El precio de la entrada es de 6 euros");
@@ -186,34 +186,34 @@
 // }
 
 // Misma Actividad 10 pero con switch
-var mes= Number(prompt("Escriba un numero del mes para saber en que estación del año se sitúa."));
+// var mes= Number(prompt("Escriba un numero del mes para saber en que estación del año se sitúa."));
 
-switch (mes) {
-    case 1: document.writeln("Inverno");
-    break;
-    case 2: document.writeln("Inverno");
-    break;
-    case 3: document.writeln("Primavera");
-    break;
-    case 4: document.writeln("Primavera");
-    break;
-    case 5: document.writeln("Primavera");
-    break;
-    case 6: document.writeln("Verano");
-    break;
-    case 7: document.writeln("Veranoo");
-    break;
-    case 8: document.writeln("Verano");
-    break;
-    case 9: 
-    case 10: 
-    case 11: 
-    document.writeln("Otoño");
-    break;
-    case 12: document.writeln("Inverno");
-    break;
-    default: alert("Mes incorrecto");
-}
+// switch (mes) {
+//     case 1: document.writeln("Inverno");
+//     break;
+//     case 2: document.writeln("Inverno");
+//     break;
+//     case 3: document.writeln("Primavera");
+//     break;
+//     case 4: document.writeln("Primavera");
+//     break;
+//     case 5: document.writeln("Primavera");
+//     break;
+//     case 6: document.writeln("Verano");
+//     break;
+//     case 7: document.writeln("Veranoo");
+//     break;
+//     case 8: document.writeln("Verano");
+//     break;
+//     case 9: 
+//     case 10: 
+//     case 11: 
+//     document.writeln("Otoño");
+//     break;
+//     case 12: document.writeln("Inverno");
+//     break;
+//     default: alert("Mes incorrecto");
+// }
 
 
 // ACTIVIDAD 11
@@ -241,3 +241,51 @@ switch (mes) {
 // } else {
 //     alert("No existe");
 // }
+
+//ACTIVIDAD EXTRA
+
+var precioBase = Number(prompt("¿Cuánto tienes que pagar?"));
+
+var socio = prompt("¿Eres socio de nuestro club?").toLowerCase();
+
+
+// var limite=50;
+
+if (precioBase < 50) {
+    if (socio == "si") {
+        precioFinal1 = (precioBase - (precioBase * 0.05))
+    } else if (socio == "no") {
+        precioFinal1 = precioBase
+    }
+    document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
+} else if (precioBase >= 200) {
+    if (socio == "si") {
+        precioFinal1 = (precioBase - (precioBase * 0.25))
+        if ((precioBase * 0.25) > 50) {
+            precioFinal1 = (precioBase - 50)
+        }
+    } else if (socio == "no") {
+        precioFinal1 = (precioBase - (precioBase * 0.2))
+        if ((precioBase * 0.2) > 50) {
+            precioFinal1 = (precioBase - 50)
+        }
+    }
+    document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
+
+} else if (precioBase >= 100) {
+    if (socio == "si") {
+        precioFinal1 = (precioBase - (precioBase * 0.2))
+    } else if (socio == "no") {
+        precioFinal1 = (precioBase - (precioBase * 0.1))
+    }
+    document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
+} else if (precioBase >= 50) {
+    if (socio == "si") {
+        precioFinal1 = (precioBase - (precioBase * 0.1))
+    } else if (socio == "no") {
+        precioFinal1 = (precioBase - (precioBase * 0.05))
+    }
+    document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
+}
+
+
