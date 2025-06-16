@@ -173,13 +173,14 @@
             <!-- Aquí se va a realizar el segundo formulario -->
              <h3>Ejemplo de solución</h3>
              <form action="" method="get">
-                <div>
+                <div class="formulario">
                     <label for="nombre">Nombre completo</label>
-                    <input type="text">
+                    <input type="text" id="nombre" name="nombre" value="David">
                     <label for="email">Correo electrónico</label>
-                    <input type="email" name="correo" id="email">
+                    <input type="email" name="correo" id="email" value="davidperez.doca" class="error">
                     <label for="clave">Contraseña</label>
                     <input type="password" name="contrasenha" id="clave">
+                    <button type="submit">Enviar</button>
                 </div>
              </form>
         </section>

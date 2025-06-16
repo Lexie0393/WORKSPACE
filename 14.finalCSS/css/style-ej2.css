@@ -77,3 +77,32 @@ form> button {
 }
 
 /* Resultado CSS del ejercicio 3 */
+
+.formulario {
+    border: 1px solid white;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.formulario input .error {
+  border-color: #c11d1d;
+  background-color: #ffecec;
+}

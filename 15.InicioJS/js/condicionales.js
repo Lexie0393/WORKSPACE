@@ -244,48 +244,48 @@
 
 //ACTIVIDAD EXTRA
 
-var precioBase = Number(prompt("¿Cuánto tienes que pagar?"));
+// var precioBase = Number(prompt("¿Cuánto tienes que pagar?"));
 
-var socio = prompt("¿Eres socio de nuestro club?").toLowerCase();
+// var socio = prompt("¿Eres socio de nuestro club?").toLowerCase();
 
 
-// var limite=50;
+// // var limite=50;
 
-if (precioBase < 50) {
-    if (socio == "si") {
-        precioFinal1 = (precioBase - (precioBase * 0.05))
-    } else if (socio == "no") {
-        precioFinal1 = precioBase
-    }
-    document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
-} else if (precioBase >= 200) {
-    if (socio == "si") {
-        precioFinal1 = (precioBase - (precioBase * 0.25))
-        if ((precioBase * 0.25) > 50) {
-            precioFinal1 = (precioBase - 50)
-        }
-    } else if (socio == "no") {
-        precioFinal1 = (precioBase - (precioBase * 0.2))
-        if ((precioBase * 0.2) > 50) {
-            precioFinal1 = (precioBase - 50)
-        }
-    }
-    document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
+// if (precioBase < 50) {
+//     if (socio == "si") {
+//         precioFinal1 = (precioBase - (precioBase * 0.05))
+//     } else if (socio == "no") {
+//         precioFinal1 = precioBase
+//     }
+//     document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
+// } else if (precioBase >= 200) {
+//     if (socio == "si") {
+//         precioFinal1 = (precioBase - (precioBase * 0.25))
+//         if ((precioBase * 0.25) > 50) {
+//             precioFinal1 = (precioBase - 50)
+//         }
+//     } else if (socio == "no") {
+//         precioFinal1 = (precioBase - (precioBase * 0.2))
+//         if ((precioBase * 0.2) > 50) {
+//             precioFinal1 = (precioBase - 50)
+//         }
+//     }
+//     document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
 
-} else if (precioBase >= 100) {
-    if (socio == "si") {
-        precioFinal1 = (precioBase - (precioBase * 0.2))
-    } else if (socio == "no") {
-        precioFinal1 = (precioBase - (precioBase * 0.1))
-    }
-    document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
-} else if (precioBase >= 50) {
-    if (socio == "si") {
-        precioFinal1 = (precioBase - (precioBase * 0.1))
-    } else if (socio == "no") {
-        precioFinal1 = (precioBase - (precioBase * 0.05))
-    }
-    document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
-}
+// } else if (precioBase >= 100) {
+//     if (socio == "si") {
+//         precioFinal1 = (precioBase - (precioBase * 0.2))
+//     } else if (socio == "no") {
+//         precioFinal1 = (precioBase - (precioBase * 0.1))
+//     }
+//     document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
+// } else if (precioBase >= 50) {
+//     if (socio == "si") {
+//         precioFinal1 = (precioBase - (precioBase * 0.1))
+//     } else if (socio == "no") {
+//         precioFinal1 = (precioBase - (precioBase * 0.05))
+//     }
+//     document.writeln("El precio final a pagar es " + precioFinal1 + " euros");
+// }
 
 
