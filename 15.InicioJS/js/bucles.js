@@ -80,13 +80,67 @@
 
 // otra opcion de la actividad 7
 
-var ahorroMes= Number(prompt("¿Cuánto ahorras al mes?"));
-var objetivo= Number(prompt("¿Cuánto quieres ahorrar?"));
-var ahorroAnho= ahorroMes*12;
-var totalAhorrado= 0;
-var contador=1;
-while (totalAhorrado<=objetivo) {
-    totalAhorrado= totalAhorrado + (ahorroAnho);
-    document.writeln("<br>Año: " + contador + "Total ahorrado " + totalAhorrado);
-    contador++;
-}
+// var ahorroMes= Number(prompt("¿Cuánto ahorras al mes?"));
+// var objetivo= Number(prompt("¿Cuánto quieres ahorrar?"));
+// var ahorroAnho= ahorroMes*12;
+// var totalAhorrado= 0;
+// var contador=1;
+// while (totalAhorrado<=objetivo) {
+//     totalAhorrado= totalAhorrado + (ahorroAnho);
+//     document.writeln("<br>Año: " + contador + "Total ahorrado " + totalAhorrado);
+//     contador++;
+// }
+
+
+// ACTIVIDAD 8
+// var tabla;
+// // var mult;
+// var contador=1;
+// while(contador<11) {
+//     // mult= (contador);
+//     tabla= (1* contador);
+//     document.writeln("<li>" + "1 x " + contador+ " = " + tabla + "</li>");
+//     contador++;
+// }
+
+// Actividad variante del 8
+//  var tabla=1;
+
+// for(var num=1; num<=5; num++){
+//     for (var contador = 1; contador < 11; contador++) {
+//         resultado = (num * contador);
+//         document.writeln("<li>" + num + "x" + contador + " = " + resultado + "</li>");
+//     }
+// document.writeln("<br>");
+// }
+
+
+//  ACTIVIDAD VARIANTE DEL 8
+
+// var tabla= Number(prompt("Escribeme la tabla de multiplicar del:"));
+
+// var resultado;
+
+// for(var contador=1; contador<11; contador++) {
+//     resultado=(tabla*contador);
+//     document.writeln("<li>" + tabla + "x" + contador + " = " + resultado + "</li>");
+// }
+
+//ACTIVIDAD 9
+
+// var estrella = "*";
+
+// for (var contador = 1; contador <= 7; contador++) {
+//     document.writeln("<br> " + estrella);
+//     var estrella = "*" + estrella;
+// }
+
+//  ACTIVIDAD 10
+
+// var pregunta= prompt("Escribe algo:").toLowerCase();
+
+// var contador=1;
+// while(pregunta != "salir") {
+//     alert(pregunta);
+//     pregunta= prompt("Escribe algo:").toLowerCase();
+// }
