@@ -1,11 +1,14 @@
 /* EJERCICIO 1 */
 
 /* Estilizar todos los párrafos (<p>) */
-
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* Estilizar el primer párrafo después de cada título (<h2>) */
-
-
+section p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 /* Estilizar todos los elementos que sean hijos directos del contenedor principal (#contenedor) */
 
 
