@@ -20,22 +20,7 @@
         <h1 class="contenedor"><span class="ejercicio">2 - </span>Pseudoclases</h1>
     </header>
     <main class="contenedor">
-        <section>
-            <h2>:hover</h2>
-            <p>Se aplica a un elemento cuando el cursor del mouse está sobre él.</p>
-        </section>
-
-        <section>
-            <h2>:active</h2>
-            <p>Se aplica a un elemento mientras está siendo activado, generalmente al hacer clic en él.</p>
-
-        </section>
-
-        <section>
-            <h2>:disabled</h2>
-            <p>Se aplica a elementos de formulario que están deshabilitados, es decir, que no se pueden editar o
-                interactuar.</p>
-        </section>
+       
 
         <section>
             <h2>Ejercicio</h2>
@@ -72,20 +57,20 @@
 
         <hr>
 
-        <section>
+        <section id="checked">
             <h2>:checked</h2>
             <p>Se aplica a elementos de formulario (como checkboxes o radio buttons) que están marcados o
                 seleccionados.
             </p>
         </section>
 
-        <section>
+        <section id="focus">
             <h2>:focus</h2>
             <p>Se aplican a elementos de formulario mientras está siendo enfocado por el usuario, es decir, cuando un
                 usuario hace clic o selecciona un elemento para interactuar con él.</p>
         </section>
 
-        <section>
+        <section id="valid-invalid">
             <h2>:valid e :invalid</h2>
             <p>Se aplican a elementos de formulario que cumplen (o no cumplen) con los requisitos de validación.</p>
         </section>
@@ -171,18 +156,18 @@
         <section>
             <h2>Solución</h2>
             <!-- Aquí se va a realizar el segundo formulario -->
-             <h3>Ejemplo de solución</h3>
-             <form action="" method="get">
+            <h3>Ejemplo de solución</h3>
+            <form action="" method="get">
                 <div class="formulario">
                     <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" value="David">
+                    <input type="text" id="nombre" name="nombre" required minlength="3">
                     <label for="email">Correo electrónico</label>
-                    <input type="email" name="correo" id="email" value="davidperez.doca" class="error">
+                    <input type="email" name="correo" id="email" required placeholder="ejemplo@gmil.com">
                     <label for="clave">Contraseña</label>
-                    <input type="password" name="contrasenha" id="clave">
+                    <input type="password" name="contrasenha" id="clave" minlength="6">
                     <button type="submit">Enviar</button>
                 </div>
-             </form>
+            </form>
         </section>
 
         <hr>
@@ -212,6 +197,33 @@
         <section>
             <h2>Solución</h2>
             <!-- Aquí se va a realizar la solución del ejercicio anterior -->
+            <h3>Ir a sección</h3>
+            <nav>
+                <a href="#hover">:hover</a>
+                <a href="#active">:active</a>
+                <a href="#disabled">:disabled</a>
+                <a href="#checked">:checked</a>
+                <a href="#focus">:focus</a>
+                <a href="#valid-invalid">:valid</a>
+                <a href="#valid-invalid">:invalid</a>
+            </nav>
+               
+        </section>
+         <section id="hover">
+            <h2>:hover</h2>
+            <p>Se aplica a un elemento cuando el cursor del mouse está sobre él.</p>
+        </section>
+
+        <section id="active">
+            <h2>:active</h2>
+            <p>Se aplica a un elemento mientras está siendo activado, generalmente al hacer clic en él.</p>
+
+        </section>
+
+        <section id="disabled">
+            <h2>:disabled</h2>
+            <p>Se aplica a elementos de formulario que están deshabilitados, es decir, que no se pueden editar o
+                interactuar.</p>
         </section>
     </main>
     <footer>

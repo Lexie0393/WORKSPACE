@@ -1,14 +1,15 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-scroll-behavior: smooth;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-.contenedor{
-width: 90%;
-max-width: 1200px;
-margin: 0 auto;
-padding: 60px 0;
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 /* CSS del ejercicio 1 */
@@ -24,14 +25,15 @@ button {
     background-color: rgb(7, 74, 7);
 }
 
-button:hover{
+button:hover {
     background-color: aqua;
 }
 
-button:active{
+button:active {
     background-color: yellow;
 }
-button:disabled{
+
+button:disabled {
     background-color: gray;
 }
 
@@ -51,7 +53,8 @@ form {
     background-color: white;
     width: 600px;
 }
-form> p {
+
+form>p {
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -66,13 +69,13 @@ form> p {
     cursor: pointer;
 }
 
-input:checked + label {
+input:checked+label {
     background-color: rgb(2, 48, 2);
     text-decoration: underline;
     color: white;
 }
 
-form> button {
+form>button {
     margin: 20px;
 }
 
@@ -94,15 +97,89 @@ form> button {
 
 .formulario input {
     width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  border-radius: 6px;
-  box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
 }
 
-.formulario input .error {
-  border-color: #c11d1d;
-  background-color: #ffecec;
+.formulario input:invalid {
+    border: #c11d1d solid 2px;
+    background-color: #ffecec;
 }
+
+/* ++++++++ RESULTADO EJERCICIO ULTIMO +++++++++++ */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    padding: 10px;
+    border: rgba(29, 72, 29, 0.982) 1px solid;
+    background-color: rgb(50, 103, 50);
+    border-radius: 10px;
+
+}
+
+nav a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #f3f0f0;
+    display: flex;
+}
+
+section {
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* PARA OCULTAR LA SECCION Y SOLO APAREZCA CUANDO LE DE AL BOTON */
+
+#hover,
+#active,
+#disabled {
+    display: none;
+}
+
+#hover:target,
+#active:target,
+#disabled:target {
+    display: block;
+}
+
+section:target {
+    display: block;
+
+}
+
+/* PARA QUE CUANDO PINCHE ME LLEVE A ESA SECCION Y QUEDE DESTACADA CON UN COLOR */
+
+/* background-color: rgb(122, 216, 185); */
+
+/* 
+#active:target {
+    background-color: rgb(122, 216, 185);
+}
+
+#disabled:target {
+    background-color: rgb(122, 216, 185);
+}
+
+#checked:target {
+    background-color: rgb(122, 216, 185);
+}
+
+#focus:target {
+    background-color: rgb(122, 216, 185);
+}
+
+#valid-invalid:target {
+    background-color: rgb(122, 216, 185);
+} */
