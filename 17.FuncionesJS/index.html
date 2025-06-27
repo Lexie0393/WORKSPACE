@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JavaScript</title>
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="contenedor">
+        <h1>Ejercicios de funciones en JavaScript</h1>
+    </header>
+    <main>
+        <h2>Primera fase</h2>
+        <section class="ejercicios contenedor">
+            <div class="ejercicio fase-1">
+                <h3>Ej.1 - Volumen del cubo</h3>
+                <p class="enunciado">Vamos a crear una función llamada <em>volumenCubo()</em> que le pida al usuario
+                    que introduzca la longitud del cubo. Una vez lo introduzca, vamos a mostrar el resultado en una
+                    alerta.</p>
+                <button>Probar función</button>
+            </div>
+            <div class="ejercicio fase-1">
+                <h3>Ej.2 - Volumen de una esfera</h3>
+                <p class="enunciado">Vamos a crear una función llamada <em>volumenEsfera()</em> que le pida al usuario
+                    que introduzca el radio de una esfera. Una vez lo introduzca, vamos a mostrar el resultado en una
+                    alerta.</p>
+                <button>Probar función</button>
+            </div>
+            <div class="ejercicio fase-1">
+                <h3>Ej.3 - Volumen de un cilindro</h3>
+                <p class="enunciado">Vamos a crear una función llamada <em>volumenCilindro()</em> que le pida al usuario que introduzca el radio de la base y la altura de un cilindro.
+                    Una vez lo introduzca, vamos a mostrar el resultado en una alerta.</p>
+                <button>Probar función</button>
+            </div>
+            <div class="ejercicio fase-1">
+                <h3>Ej.4 - Volumen de un objeto tridimensional</h3>
+                <p class="enunciado">Ahora vamos a pedir al usuario que nos introduzca el objeto a la que queremos
+                    calcular su volumen (CIL, ESF o CUB). Una vez escogida el objeto, que le solicita los datos necesarios para
+                    calcular el volumen de esta. Al final mostrar en una alerta el volumen del objeto indicado.</p>
+                <button>Probar función</button>
+            </div>
+        </section>
+        <h2>Segunda fase</h2>
+        <section class="ejercicios contenedor">
+            <div class="ejercicio">
+                <h3>Ej.1 - Mostrar mensaje</h3>
+                <p class="enunciado">Vamos a crear una función llamada <em>mostrarMensaje()</em> que le pida al usuario
+                    que introduzca un texto. Una vez lo introduzca, vamos a escribir ese texto en el elemento párrafo
+                    que tiene el id="ejercicio-1".</p>
+                <button>Probar función</button>
+                    <h3>Resultado:</h3>
+                    <p id="ejercicio-1">Este texto va a ser sustituído por lo que introduzca el usuario.</p>
+            </div>
+            <div class="ejercicio" id="ejercicio-2">
+                <h3>Ej.2 - Color card</h3>
+                <p class="enunciado">Vamos a cambiar el color de la card de este ejercicio. Para ello necesitamos crear
+                    una función <em>cambiarColor()</em> en la que le preguntemos al usuario un color, y le establezcamos
+                    ese color a esta card. <br> <b>Pista:</b> una vez pedimos el color, debemos obtener en una variable
+                    el elemento de la card (con getElementById, QuerySelector) y a la propiedad style y background le
+                    asignamos el valor de ese color.</p>
+                <button>Probar función</button>
+            </div>
+            <div class="ejercicio">
+                <h3>Ej.3 - Color fondo</h3>
+                <p class="enunciado">Ahora vamos a cambiar el color de fondo de toda la página por el color que nos
+                    inserte el usuario. Esta vez tienes que darle nombre a la función, asociarla al botón y conseguir
+                    obtener el elemento que equivale a toda la página y cambiarle el color de fondo.</p>
+                <button>Probar función</button>
+            </div>
+            <div class="ejercicio">
+                <h3>Ej.4 - Texto del revés</h3>
+                <p class="enunciado">Pedir al usuario que escriba un texto cualquiera y devolverlo al revés. Devuelve el
+                    resultado en el párrafo con id="ejercicio-4"</p>
+                <button>Probar función</button>
+                <h3>Resultado:</h3>
+                <p id="ejercicio-4">Este texto va a ser sustituído por lo que introduzca el usuario pero al revés.</p>
+            </div>
+        </section>
+        <h2>Tercera fase</h2>
+        <section class="ejercicios contenedor">
+            <div class="ejercicio">
+                <h3>Ej.1 - Cambiar color de las cards de la fase 1</h3>
+                <p class="enunciado">Vamos a pedir al usuario que escriba un color y se lo vamos a poner de fondo a las
+                    4 cards de la fase 1. Este ejercicio se puede resolver de varias maneras.</p>
+                <button>Probar función</button>
+            </div>
+            <div class="ejercicio" id="ejercicio-2">
+                <h3>Ej.2 - Registrar producto</h3>
+                <p class="enunciado">Pedir al usuario un nombre de un producto y a contunuación su precio. Mostrar el
+                    nombre del producto y su precio en el párrafo de resultado de esta card.</p>
+                <button onclick="">Probar función</button>
+                <h3>Resultado:</h3>
+                <p>Aquí va a ir el resultado.</p>
+            </div>
+            <div class="ejercicio">
+                <h3>Ej.3 - Registrar varios productos</h3>
+                <p class="enunciado">Hacer lo mismo que en el ejercicio anterior, pero ahora guardar los datos en dos
+                    arrays. Un array con los nombres de los productos y otro con los precios. Cada vez que se le da al
+                    botón se va añadiendo un producto nuevo a los arrays. Al pulsar el segundo botón que se muestren
+                    todos los productos y sus precios.</p>
+                <button>Registrar producto</button>
+                <button>Mostrar productos</button>
+                <p>Aquí va a ir el resultado.</p>
+            </div>
+            <div class="ejercicio">
+                <h3>Ej.4 - Devolver la letra del DNI</h3>
+                <p class="enunciado">Pedir al usuario que escriba los números de su DNI y le devuelva el DNI completo.
+                </p>
+                <button>Probar función</button>
+                <h3>Resultado:</h3>
+                <p>Este texto va a ser sustituído por el DNI completo del usuario</p>
+            </div>
+            <div class="ejercicio">
+                <h3>Ej.5 - Comprobar si el DNI es correcto</h3>
+                <p class="enunciado">Pedir al usuario que escriba su DNI completo y comprobar que el DNI es correcto. Si
+                    el DNI ingresado es correcto colorear la card con fondo verde y poner en el párrafo de resultado que
+                    el DNI es correcto.</p>
+                <button>Probar función</button>
+                <h3>Resultado:</h3>
+                <p>Aquí se va a indicar si el DNI es correcto o no.</p>
+            </div>
+        </section>
+        <h2>Cuarta fase</h2>
+        <section class="ejercicios contenedor">
+            <div class="ejercicio">
+                <h3>Ej.1 - Manejar array</h3>
+                <p class="enunciado">Crea un array vacío. Vamos a tener cuatro botones. <br> En el primer botón que te
+                    pida escribir un texto y te añada ese texto al final del array. <br> En el segundo botón haz que se
+                    elimine el último valor introducido en el array. <br> En el tercer botón vamos a pedir al usuario
+                    que introduzca un texto y lo vamos añadir al principio del array. <br> En el cuarto botón vamos a
+                    eliminar el primer elemento del array.</p>
+                <button>Añadir al final</button>
+                <button>Eliminar el último</button>
+                <button>Añadir al principio</button>
+                <button>Eliminar el primero</button>
+                <h3>Resultado:</h3>
+                <p>Aquí va el resultado</p>
+            </div>
+            <div class="ejercicio">
+                <h3>Ej.2 - Pintar cuadrado</h3>
+                <p class="enunciado">A continuación tenemos 10 divs en forma de cuadrado de color verde. Cambia a rojo
+                    el color del segundo div.</p>
+                <div>
+                    <div class="cuadrado verde">0</div>
+                    <div class="cuadrado verde">1</div>
+                    <div class="cuadrado verde">2</div>
+                    <div class="cuadrado verde">3</div>
+                    <div class="cuadrado verde">4</div>
+                    <div class="cuadrado verde">5</div>
+                    <div class="cuadrado verde">6</div>
+                    <div class="cuadrado verde">7</div>
+                    <div class="cuadrado verde">8</div>
+                    <div class="cuadrado verde">9</div>
+                </div>
+                <button>Probar función</button>
+            </div>
+            <div class="ejercicio">
+                <h3>Ej.3 - Pintar todos los cuadrados</h3>
+                <p class="enunciado">Teniendo 10 cuadrados de color verde. Pide al usuario un color y pinta todos los
+                    cuadrados de ese color.</p>
+                <div>
+                    <div class="cuadrado verde">0</div>
+                    <div class="cuadrado verde">1</div>
+                    <div class="cuadrado verde">2</div>
+                    <div class="cuadrado verde">3</div>
+                    <div class="cuadrado verde">4</div>
+                    <div class="cuadrado verde">5</div>
+                    <div class="cuadrado verde">6</div>
+                    <div class="cuadrado verde">7</div>
+                    <div class="cuadrado verde">8</div>
+                    <div class="cuadrado verde">9</div>
+                </div>
+                <button>Probar función</button>
+            </div>
+            <div class="ejercicio">
+                <h3>Ej.4 - Pintar cuadrados pares</h3>
+                <p class="enunciado">Teniendo 10 cuadrados de color verde. Pinta los cuadrados que tienen números pares
+                    de un color que pidas al usuario.</p>
+                <div>
+                    <div class="cuadrado verde">0</div>
+                    <div class="cuadrado verde">1</div>
+                    <div class="cuadrado verde">2</div>
+                    <div class="cuadrado verde">3</div>
+                    <div class="cuadrado verde">4</div>
+                    <div class="cuadrado verde">5</div>
+                    <div class="cuadrado verde">6</div>
+                    <div class="cuadrado verde">7</div>
+                    <div class="cuadrado verde">8</div>
+                    <div class="cuadrado verde">9</div>
+                </div>
+                <button>Probar función</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>

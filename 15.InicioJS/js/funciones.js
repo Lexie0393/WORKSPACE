@@ -146,5 +146,20 @@ function carlcularPrecioFinal (precioBase, tipoOperacion, porcentaje) {
 
     return precioFinal;
 }
+// document.writeln(carlcularPrecioFinal(80, "descuento", 21));
 
-document.writeln(carlcularPrecioFinal(80, "descuento", 21));
+
+function carlcularPrecioFinal (precioBase, descuento, IVA) {
+    var precioIVA=precioBase+ precioBase*iva/100;
+    var precioFinal = precioIVA-precioIVA*descuento/100;
+    return precioFinal
+}
+
+var precio= Number(prompt("Dime el precio: "));
+var descuento= Number(prompt("Dime el descuento: "));
+var iva= Number(prompt("Dime el iva: "));
+
+// document.writeln(carlcularPrecioFinal(precio, descuento, iva));
+
+
+

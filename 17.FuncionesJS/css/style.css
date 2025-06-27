@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorPrimario: #B8B8FF;
+    --colorSecundario: #4F6367;
+    --colorTres: #FFECCC;
+    --colorTextos: #313131;
+    --paddingSecciones: 60px 0;
+    --marginElementos: 40px;
+
+    --glade-green-50: #f5f8f5;
+    --glade-green-100: #e8f0e8;
+    --glade-green-200: #d1e1d1;
+    --glade-green-300: #acc9ac;
+    --glade-green-400: #82a880;
+    --glade-green-500: #588157;
+    --glade-green-600: #4a7049;
+    --glade-green-700: #3c593c;
+    --glade-green-800: #334833;
+    --glade-green-900: #2b3c2b;
+    --glade-green-950: #141f15;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: rgb(172, 201, 172);
+    background: linear-gradient(135deg, rgba(172, 201, 172, 1) 0%, rgba(60, 89, 60, 1) 100%);
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: var(--glade-green-950);
+}
+h2{
+    font-size: 2rem;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingSecciones);
+}
+
+.ejercicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.ejercicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+    min-width: 300px;
+    width: 30%;
+    min-height: 500px;
+    padding: 20px;
+    border: 1px black solid;
+    border-radius: 1rem;
+    background-color: var(--glade-green-100);
+
+}
+
+.ejercicio button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    width: max-content;
+    background-color: var(--glade-green-500);
+    color: var(--glade-green-50);
+}
+
+.div-color{
+    width: max-content;
+    margin: auto;
+}
+.cuadrado{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 2px;
+}
+.verde{
+    background-color: var(--glade-green-400);
+}
+.naranja{
+    background-color: #ed7855;
+}
+.violeta{
+    background-color: #63465A;
+}
+.amarillo{
+    background-color: #FFBB70;
+}
