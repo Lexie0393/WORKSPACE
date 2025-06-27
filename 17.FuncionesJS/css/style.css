@@ -27,8 +27,8 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    background: rgb(172, 201, 172);
     background: linear-gradient(135deg, rgba(172, 201, 172, 1) 0%, rgba(60, 89, 60, 1) 100%);
+    background: rgb(172, 201, 172);
 }
 
 h1, h2 {
@@ -71,6 +71,7 @@ h2{
     background-color: var(--glade-green-100);
 
 }
+
 
 .ejercicio button {
     padding: 0.75rem 1.5rem;

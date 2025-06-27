@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="fondoPag">
     <header class="contenedor">
         <h1>Ejercicios de funciones en JavaScript</h1>
     </header>
@@ -19,10 +19,12 @@
         <section class="ejercicios contenedor">
             <div class="ejercicio fase-1">
                 <h3>Ej.1 - Volumen del cubo</h3>
+                <input type="number" name="volumen" id="volumen">
                 <p class="enunciado">Vamos a crear una función llamada <em>volumenCubo()</em> que le pida al usuario
                     que introduzca la longitud del cubo. Una vez lo introduzca, vamos a mostrar el resultado en una
                     alerta.</p>
-                <button>Probar función</button>
+                    <p id="solucionEj1F1">El volumen del cubo es: </p>
+                <button onclick="volumenCubo()">Probar función</button>
             </div>
             <div class="ejercicio fase-1">
                 <h3>Ej.2 - Volumen de una esfera</h3>
@@ -52,31 +54,35 @@
                 <p class="enunciado">Vamos a crear una función llamada <em>mostrarMensaje()</em> que le pida al usuario
                     que introduzca un texto. Una vez lo introduzca, vamos a escribir ese texto en el elemento párrafo
                     que tiene el id="ejercicio-1".</p>
-                <button>Probar función</button>
+                    <input type="text" name="textoEj1" id="textoEj1">
+                <button onclick="mostrarMensaje()">Probar función</button>
                     <h3>Resultado:</h3>
                     <p id="ejercicio-1">Este texto va a ser sustituído por lo que introduzca el usuario.</p>
             </div>
             <div class="ejercicio" id="ejercicio-2">
                 <h3>Ej.2 - Color card</h3>
+                <input type="color" name="color" id="color">
                 <p class="enunciado">Vamos a cambiar el color de la card de este ejercicio. Para ello necesitamos crear
                     una función <em>cambiarColor()</em> en la que le preguntemos al usuario un color, y le establezcamos
                     ese color a esta card. <br> <b>Pista:</b> una vez pedimos el color, debemos obtener en una variable
                     el elemento de la card (con getElementById, QuerySelector) y a la propiedad style y background le
                     asignamos el valor de ese color.</p>
-                <button>Probar función</button>
+                <button onclick="cambiarColor()">Probar función</button>
             </div>
             <div class="ejercicio">
                 <h3>Ej.3 - Color fondo</h3>
+                <input type="color" name="colorFondo" id="colorFondo">
                 <p class="enunciado">Ahora vamos a cambiar el color de fondo de toda la página por el color que nos
                     inserte el usuario. Esta vez tienes que darle nombre a la función, asociarla al botón y conseguir
                     obtener el elemento que equivale a toda la página y cambiarle el color de fondo.</p>
-                <button>Probar función</button>
+                <button onclick="cambiarFondo()">Probar función</button>
             </div>
             <div class="ejercicio">
                 <h3>Ej.4 - Texto del revés</h3>
+                <input type="text" name="reves" id="reves">
                 <p class="enunciado">Pedir al usuario que escriba un texto cualquiera y devolverlo al revés. Devuelve el
                     resultado en el párrafo con id="ejercicio-4"</p>
-                <button>Probar función</button>
+                <button onclick="textReves()">Probar función</button>
                 <h3>Resultado:</h3>
                 <p id="ejercicio-4">Este texto va a ser sustituído por lo que introduzca el usuario pero al revés.</p>
             </div>
@@ -85,9 +91,10 @@
         <section class="ejercicios contenedor">
             <div class="ejercicio">
                 <h3>Ej.1 - Cambiar color de las cards de la fase 1</h3>
+                <input type="color" name="color1" id="color1">
                 <p class="enunciado">Vamos a pedir al usuario que escriba un color y se lo vamos a poner de fondo a las
                     4 cards de la fase 1. Este ejercicio se puede resolver de varias maneras.</p>
-                <button>Probar función</button>
+                <button onclick="colorCards()">Probar función</button>
             </div>
             <div class="ejercicio" id="ejercicio-2">
                 <h3>Ej.2 - Registrar producto</h3>
