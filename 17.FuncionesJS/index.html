@@ -23,7 +23,7 @@
                 <p class="enunciado">Vamos a crear una función llamada <em>volumenCubo()</em> que le pida al usuario
                     que introduzca la longitud del cubo. Una vez lo introduzca, vamos a mostrar el resultado en una
                     alerta.</p>
-                    <p id="solucionEj1F1">El volumen del cubo es: </p>
+                <p id="solucionEj1F1">El volumen del cubo es: </p>
                 <button onclick="volumenCubo()">Probar función</button>
             </div>
             <div class="ejercicio fase-1">
@@ -35,14 +35,16 @@
             </div>
             <div class="ejercicio fase-1">
                 <h3>Ej.3 - Volumen de un cilindro</h3>
-                <p class="enunciado">Vamos a crear una función llamada <em>volumenCilindro()</em> que le pida al usuario que introduzca el radio de la base y la altura de un cilindro.
+                <p class="enunciado">Vamos a crear una función llamada <em>volumenCilindro()</em> que le pida al usuario
+                    que introduzca el radio de la base y la altura de un cilindro.
                     Una vez lo introduzca, vamos a mostrar el resultado en una alerta.</p>
                 <button>Probar función</button>
             </div>
             <div class="ejercicio fase-1">
                 <h3>Ej.4 - Volumen de un objeto tridimensional</h3>
                 <p class="enunciado">Ahora vamos a pedir al usuario que nos introduzca el objeto a la que queremos
-                    calcular su volumen (CIL, ESF o CUB). Una vez escogida el objeto, que le solicita los datos necesarios para
+                    calcular su volumen (CIL, ESF o CUB). Una vez escogida el objeto, que le solicita los datos
+                    necesarios para
                     calcular el volumen de esta. Al final mostrar en una alerta el volumen del objeto indicado.</p>
                 <button>Probar función</button>
             </div>
@@ -54,10 +56,10 @@
                 <p class="enunciado">Vamos a crear una función llamada <em>mostrarMensaje()</em> que le pida al usuario
                     que introduzca un texto. Una vez lo introduzca, vamos a escribir ese texto en el elemento párrafo
                     que tiene el id="ejercicio-1".</p>
-                    <input type="text" name="textoEj1" id="textoEj1">
+                <input type="text" name="textoEj1" id="textoEj1">
                 <button onclick="mostrarMensaje()">Probar función</button>
-                    <h3>Resultado:</h3>
-                    <p id="ejercicio-1">Este texto va a ser sustituído por lo que introduzca el usuario.</p>
+                <h3>Resultado:</h3>
+                <p id="ejercicio-1">Este texto va a ser sustituído por lo que introduzca el usuario.</p>
             </div>
             <div class="ejercicio" id="ejercicio-2">
                 <h3>Ej.2 - Color card</h3>
@@ -100,9 +102,9 @@
                 <h3>Ej.2 - Registrar producto</h3>
                 <p class="enunciado">Pedir al usuario un nombre de un producto y a contunuación su precio. Mostrar el
                     nombre del producto y su precio en el párrafo de resultado de esta card.</p>
-                <button onclick="">Probar función</button>
+                <button onclick="mostrarProduct()">Probar función</button>
                 <h3>Resultado:</h3>
-                <p>Aquí va a ir el resultado.</p>
+                <p id="parraforesultado">Aquí va a ir el resultado.</p>
             </div>
             <div class="ejercicio">
                 <h3>Ej.3 - Registrar varios productos</h3>
@@ -110,9 +112,9 @@
                     arrays. Un array con los nombres de los productos y otro con los precios. Cada vez que se le da al
                     botón se va añadiendo un producto nuevo a los arrays. Al pulsar el segundo botón que se muestren
                     todos los productos y sus precios.</p>
-                <button>Registrar producto</button>
-                <button>Mostrar productos</button>
-                <p>Aquí va a ir el resultado.</p>
+                <button onclick="agregarProducto()">Registrar producto</button>
+                <button onclick="mostrarProducto()">Mostrar productos</button>
+                <p id="resultadopropre">Aquí va a ir el resultado.</p>
             </div>
             <div class="ejercicio">
                 <h3>Ej.4 - Devolver la letra del DNI</h3>
@@ -141,12 +143,12 @@
                     elimine el último valor introducido en el array. <br> En el tercer botón vamos a pedir al usuario
                     que introduzca un texto y lo vamos añadir al principio del array. <br> En el cuarto botón vamos a
                     eliminar el primer elemento del array.</p>
-                <button>Añadir al final</button>
-                <button>Eliminar el último</button>
-                <button>Añadir al principio</button>
-                <button>Eliminar el primero</button>
+                <button onclick="agregarArray()">Añadir al final</button>
+                <button onclick="borraUltimo()">Eliminar el último</button>
+                <button onclick="añadirPrincipio()">Añadir al principio</button>
+                <button onclick="eliminarPrimero()">Eliminar el primero</button>
                 <h3>Resultado:</h3>
-                <p>Aquí va el resultado</p>
+                <p id="arrayResultado">Aquí va el resultado</p>
             </div>
             <div class="ejercicio">
                 <h3>Ej.2 - Pintar cuadrado</h3>
@@ -164,43 +166,48 @@
                     <div class="cuadrado verde">8</div>
                     <div class="cuadrado verde">9</div>
                 </div>
-                <button>Probar función</button>
+                <button onclick="cambiaDiv()">Probar función</button>
             </div>
             <div class="ejercicio">
                 <h3>Ej.3 - Pintar todos los cuadrados</h3>
                 <p class="enunciado">Teniendo 10 cuadrados de color verde. Pide al usuario un color y pinta todos los
                     cuadrados de ese color.</p>
+                <input type="color" name="colordiv" id="colordiv">
                 <div>
-                    <div class="cuadrado verde">0</div>
-                    <div class="cuadrado verde">1</div>
-                    <div class="cuadrado verde">2</div>
-                    <div class="cuadrado verde">3</div>
-                    <div class="cuadrado verde">4</div>
-                    <div class="cuadrado verde">5</div>
-                    <div class="cuadrado verde">6</div>
-                    <div class="cuadrado verde">7</div>
-                    <div class="cuadrado verde">8</div>
-                    <div class="cuadrado verde">9</div>
+                    <div class="cuadrado verde div">0</div>
+                    <div class="cuadrado verde div">1</div>
+                    <div class="cuadrado verde div">2</div>
+                    <div class="cuadrado verde div">3</div>
+                    <div class="cuadrado verde div">4</div>
+                    <div class="cuadrado verde div">5</div>
+                    <div class="cuadrado verde div">6</div>
+                    <div class="cuadrado verde div">7</div>
+                    <div class="cuadrado verde div">8</div>
+                    <div class="cuadrado verde div">9</div>
                 </div>
-                <button>Probar función</button>
+                <button onclick="cambiarColor()">Probar función</button>
             </div>
             <div class="ejercicio">
                 <h3>Ej.4 - Pintar cuadrados pares</h3>
                 <p class="enunciado">Teniendo 10 cuadrados de color verde. Pinta los cuadrados que tienen números pares
                     de un color que pidas al usuario.</p>
+                <label for="cuadradoPint">¿Qué cuadrado quieres pintar?</label>
+                <input type="number" name="cuadradoPint" id="cuadradoPint">
+                <input type="color" name="colordiv1" id="colordiv1">
                 <div>
-                    <div class="cuadrado verde">0</div>
-                    <div class="cuadrado verde">1</div>
-                    <div class="cuadrado verde">2</div>
-                    <div class="cuadrado verde">3</div>
-                    <div class="cuadrado verde">4</div>
-                    <div class="cuadrado verde">5</div>
-                    <div class="cuadrado verde">6</div>
-                    <div class="cuadrado verde">7</div>
-                    <div class="cuadrado verde">8</div>
-                    <div class="cuadrado verde">9</div>
+                    <div class="cuadrado verde div1">0</div>
+                    <div class="cuadrado verde div1">1</div>
+                    <div class="cuadrado verde div1">2</div>
+                    <div class="cuadrado verde div1">3</div>
+                    <div class="cuadrado verde div1">4</div>
+                    <div class="cuadrado verde div1">5</div>
+                    <div class="cuadrado verde div1">6</div>
+                    <div class="cuadrado verde div1">7</div>
+                    <div class="cuadrado verde div1">8</div>
+                    <div class="cuadrado verde div1">9</div>
                 </div>
-                <button>Probar función</button>
+                <button onclick="colorpar()">Probar función</button>
+                <button onclick="colorQuiero()">Pintar</button>
             </div>
         </section>
     </main>

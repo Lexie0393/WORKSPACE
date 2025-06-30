@@ -72,9 +72,9 @@ function textReves() {
 function colorCards() {
     var input = document.querySelector("#color1").value;
     var elemento = document.querySelectorAll(".fase-1");
-    
-    for (var i=0; i<=elemento.length-1; i++) {
-        elemento[i].style.background=input;
+
+    for (var i = 0; i <= elemento.length - 1; i++) {
+        elemento[i].style.background = input;
     }
     // elemento.innerHTML= input
 }
@@ -82,10 +82,36 @@ function colorCards() {
 // Ejercicio 2 de la Fase 3
 
 function mostrarProduct() {
-    var input= document.querySelector().value;
+    var producto = prompt("¿Cuál es el nombre del producto? ");
+    var precio = prompt("¿Cuál es el precio del producto?");
+    var parraforesultado = document.querySelector("#parraforesultado");
+
+    parraforesultado.innerHTML = "El nombre del producto es " + producto + " su precio es " + precio + " €";
+
 }
 
 // Ejercicio 3 de la Fase 3
+
+var nombreProducto = [];
+var precioProducto = [];
+
+function agregarProducto() {
+    var producto = prompt("¿Cuál es el nobre del producto?");
+    var precio = prompt("El precio de este producto es ");
+
+    nombreProducto.push(producto);
+    precioProducto.push(precio);
+}
+
+function mostrarProducto() {
+
+    var texto = " ";
+    for (var i = 0; i <= nombreProducto.length - 1; i++) {
+        texto = texto + nombreProducto[i] + " - " + precioProducto[i] + " € " + "<br>";
+        var parrafoResultado = document.querySelector("#resultadopropre");
+        parrafoResultado.innerHTML = texto;
+    }
+}
 
 // Ejercicio 4 de la Fase 3
 
@@ -96,9 +122,82 @@ function mostrarProduct() {
 // *************************
 
 // Ejercicio 1 de la Fase 4
+var arrayVacio = [];
+var textoResult = " "
+function agregarArray() {
+
+    var texto = prompt("Escribe un texto");
+    arrayVacio.push(texto);
+    textoResult = arrayVacio;
+    var agregarResultado = document.querySelector("#arrayResultado");
+    agregarResultado.innerHTML = textoResult;
+}
+
+function borraUltimo() {
+    arrayVacio.pop(textoResult);
+    var elimiResultado = document.querySelector("#arrayResultado");
+    elimiResultado.innerHTML = textoResult;
+
+}
+
+function añadirPrincipio() {
+    var texto = prompt("Introduce un texto ");
+    arrayVacio.unshift(texto);
+    textoResult = arrayVacio;
+    var añadirResultado = document.querySelector("#arrayResultado");
+    añadirResultado.innerHTML = textoResult;
+}
+
+function eliminarPrimero() {
+    arrayVacio.shift(textoResult);
+    var elimiResult = document.querySelector("#arrayResultado");
+    elimiResult.innerHTML = textoResult;
+}
 
 // Ejercicio 2 de la Fase 4
 
+function cambiaDiv() {
+
+    var elemento = document.querySelectorAll(".cuadrado.verde");
+    elemento[1].style.backgroundColor = "red";
+}
+
 // Ejercicio 3 de la Fase 4
 
+function cambiarColor() {
+    var input = document.querySelector("#colordiv").value;
+    var elemento = document.querySelectorAll(".cuadrado.verde.div");
+
+    for (var i = 0; i <= elemento.length - 1; i++) {
+        elemento[i].style.background = input;
+    }
+}
+
+
 // Ejercicio 4 de la Fase 4
+
+function colorpar() {
+    var input = document.querySelector("#colordiv1").value;
+    var elemento = document.querySelectorAll(".cuadrado.verde.div1");
+
+    for (var i = 0; i <= elemento.length - 1; i++) {
+        if (i % 2 == 0) {
+            elemento[i].style.background = input;
+        }
+    }
+
+}
+
+function colorQuiero() {
+    var elemento = document.querySelectorAll(".div1");
+    for (var i = 0; i <= elemento.length - 1; i++) {
+        elemento[i].style.backgroundColor = "green";
+    }
+
+    var input = document.querySelector("#colordiv1").value;
+    var input1 = document.querySelector("#cuadradoPint").value;
+    var elemento = document.querySelectorAll(".div1");
+
+    elemento[input1].style.backgroundColor = input;
+
+}
