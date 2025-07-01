@@ -115,6 +115,14 @@ function mostrarProducto() {
 
 // Ejercicio 4 de la Fase 3
 
+function calcularLetraDNI() {
+    var numeroDNI = document.querySelector("#dni").value;
+    var resto = numeroDNI % 23;
+    var letrasDNI = ["T", "R", "W", "A", "G", "M", "Y"];
+
+    document.querySelector("#resultadosEj4Fase3").innerHTML= numeroDNI + letrasDNI.charArt(resto);
+}
+
 // Ejercicio 5 de la Fase 3
 
 // *************************
@@ -165,12 +173,18 @@ function cambiaDiv() {
 // Ejercicio 3 de la Fase 4
 
 function cambiarColor() {
-    var input = document.querySelector("#colordiv").value;
+    // var input = document.querySelector("#colordiv").value;
     var elemento = document.querySelectorAll(".cuadrado.verde.div");
 
     for (var i = 0; i <= elemento.length - 1; i++) {
-        elemento[i].style.background = input;
+        elemento[i].style.background = "red";
     }
+
+//  es lo mismo pero mas rapido
+    // elemento.forEach(element => {
+    //     element.style.background= "red";
+        
+    // });
 }
 
 
