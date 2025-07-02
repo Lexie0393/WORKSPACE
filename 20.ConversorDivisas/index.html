@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Conversor de Divisas</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body class="contenedor">
+    <header>
+        <h1>MoneyGo:</h1>
+        <p>Rápido. Fácil. Inteligente.</p>
+    </header>
+    <main>
+        <section class="logo">
+            <img src="img/logo.png" alt="Logo de la empresa MoneyGo">
+            <p>Tú dinero en la moneda correcta</p>
+        </section>
+        <section class="formulario">
+            <div class="formuparte">
+                <div id="parte1">
+                    <label for="origen">Divisa de Origen</label>
+                    <select name="origen" id="origen">
+                        <option value="euros">Euros €</option>
+                        <option value="dolares">Dólares $</option>
+                        <option value="libras">Libras &#163</option>
+                        <option value="pesetas">Pesetas &#8359</option>
+                    </select>
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad">
+                </div>
+
+                <div id="parte2">
+                    <label for="destino">Divisa de Destino</label>
+                    <select name="destino" id="destino">
+                        <option value="euros">Euros €</option>
+                        <option value="dolares">Dólares $</option>
+                        <option value="libras">Libras &#163</option>
+                        <option value="pesetas">Pesetas &#8359</option>
+                    </select>
+                    <label for="resultado">Resultado</label>
+                    <input type="number" name="resultado" id="resultado">
+                </div>
+            </div>
+
+            <div id="parte3">
+                <button onclick="convertirMoneda()">Convertir</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Creada por Lexie 2025</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Trykker&display=swap');
+
+:root {
+    --Titulos: "Cormorant Garamond", serif;
+    --Subtitulos: "Alegreya Sans", sans-serif;
+    --Parrafos: "Trykker", serif;
+    --FondoPrincipal: #fff;
+    --FondoSecundario1: #A9A9A9;
+    --FondoSecundario2: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+/* +++++++++++++  HEADER  +++++++++++ */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: var(--Titulos);
+    font-size: 50px;
+    margin: 10px auto;
+    color: #fff;
+    text-align: center;
+    /* Sombra azul claro al recuadro y borde blanco */
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow:
+        0 0 20px 5px #30cfd0,
+        0 0 40px 10px #30cfd0;
+}
+
+header p {
+    font-family: var(--Titulos);
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    /* Borde negro a las letras */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+
+}
+
+/* +++++++++++++  MAIN  +++++++++++ */
+
+main {
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 20px 20px;
+    background-color: var(--FondoPrincipal);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section img {
+    width: 450px;
+    height: 400px;
+}
+
+section p {
+    font-family: var(--Subtitulos);
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    bottom: 55px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px auto;
+}
+
+.formulario {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    padding: 100px 70px;
+    border-radius: 20px 20px;
+    display: flex;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formuparte {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 80px;
+}
+
+#parte1,
+#parte2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#parte3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    border: solid 2px #000;
+    border-radius: 10px;
+    background-color: #88478e;
+    padding: 10px;
+    font-family: var(--Parrafos);
+    font-size: 21px;
+    color: #fff;
+}
+button:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+
+label {
+    font-family: var(--Parrafos);
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    border: 3px #88478e solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+select {
+    padding: 10px;
+    border: 3px #88478e solid;
+    border-radius: 5px;
+    font-family: var(--Parrafos);
+    font-weight: 300;
+    text-align: center;
+}
+
+/* ++++++++++  FOOTER  ++++++++++ */
+
+footer p {
+    text-align: center;
+    font-family: var(--Subtitulos);
+}
+
+/* ++++++++++  RESPONSIVE  +++++++++ */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .logo, .formulario {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        min-width: 0;
+    }
+    section img {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    header h1, header p {
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+    .formulario {
+        padding: 40px 10px;
+        min-width: 0;
+    }
+    .formuparte {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+    #parte1, #parte2, #parte3 {
+        align-items: stretch;
+    }
+    main {
+        padding: 10px 0;
+    }
+    }
+
+
+@media (max-width: 600px) {
+    header h1, header p {
+        font-size: 22px;
+    }
+    .formulario, .logo {
+        padding: 20px 5px;
+    }
+    section p {
+        font-size: 20px;
+    }
+    .formulario {
+        gap: 10px;
+    }
+    .formuparte {
+        gap: 10px;
+    }
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+    input, select {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
