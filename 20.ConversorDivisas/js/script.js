@@ -3,7 +3,7 @@
 function convertirMoneda() {
     
     var origen = document.querySelector("#origen").value;
-    var cantidad = document.querySelector("#cantidad").value;
+    var cantidad = Number(document.querySelector("#cantidad").value);
     var destino = document.querySelector("#destino").value;
     var resultado = 0;
     
