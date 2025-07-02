@@ -16,7 +16,7 @@ function convertirMoneda() {
     } else if (origen == "euros" && destino == "euros") {
         resultado = cantidad
     }
-    document.querySelector("#resultado").value = resultado;
+    document.querySelector("#resultado").value = resultado.toFixed(2);
 
 
     if (origen == "dolares" && destino == "libras") {
@@ -28,7 +28,7 @@ function convertirMoneda() {
     }else if (origen == "dolares" && destino == "dolares") {
         resultado = cantidad
     }
-    document.querySelector("#resultado").value = resultado;
+    document.querySelector("#resultado").value = resultado.toFixed(2);
 
 
     if (origen == "libras" && destino == "dolares") {
@@ -40,7 +40,7 @@ function convertirMoneda() {
     } else if (origen == "libras" && destino == "libras") {
         resultado = cantidad
     }
-    document.querySelector("#resultado").value = resultado;
+    document.querySelector("#resultado").value = resultado.toFixed(2);
 
 
     if (origen == "pesetas" && destino == "dolares") {
@@ -52,7 +52,7 @@ function convertirMoneda() {
     } else if (origen == "pesetas" && destino == "pesetas") {
         resultado = cantidad
     } 
-    document.querySelector("#resultado").value = resultado;
+    document.querySelector("#resultado").value = resultado.toFixed(2);
 }
 // conssole.log(origen);
 // conole.log(cantidad);
