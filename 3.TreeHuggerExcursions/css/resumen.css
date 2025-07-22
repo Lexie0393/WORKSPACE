@@ -1,0 +1,132 @@
+:root {
+    --textTitulo: "Cinzel Decorative", serif;
+    --textSubtitulo: "Kanit", sans-serif;
+    --textParrafo: "Quattrocento Sans", sans-serif;
+    --colorfondoPrincipal: #195636;
+    --colorfondoSecundario: #064f2acf;
+    --colorTitulo: #1a1a1a;
+    --colorBody: #fff;
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ++++++++++  HEADER +++++++++ */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    background: #466b5a76;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-family: var(--textTitulo);
+    font-weight: 600;
+    color: var(--colorTitulo);
+    padding: 10px;
+    font-size: 24px;
+}
+
+h3,
+h4 {
+    font-family: var(--textSubtitulo);
+    font-weight: 600;
+    color: var(--colorTitulo);
+    font-size: 20px;
+}
+
+#logo {
+    width: 120px;
+}
+
+.nav {
+    padding: 40px;
+    display: flex;
+
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: var(--textTitulo);
+    color: var(--colorBody);
+    font-weight: 700;
+}
+
+.nav a:active,
+.nav a:focus {
+    text-decoration: underline;
+}
+
+/* ++++++++++  BODY +++++++++ */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+body {
+    background: var(--colorBody);
+    border-radius: 10px;
+}
+
+table {
+    width: 90vw;
+    border-collapse: collapse;
+    box-shadow: 0 4px 24px rgba(25, 86, 54, 0.15);
+    border-radius: 0;
+    overflow-x: auto;
+    font-family: var(--textParrafo);
+    margin: 80px auto;
+}
+
+table th {
+    background: #195636;
+    color: #fff;
+    font-family: var(--textTitulo);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    border-right: 2px solid #fff; /* Línea blanca entre columnas */
+}
+
+table td {
+    text-align: center;
+    font-size: 1rem;
+}
+
+table th, table td {
+    padding: 10px 8px;
+    border: 1px solid #195636;
+    font-size: 0.95rem;
+}
